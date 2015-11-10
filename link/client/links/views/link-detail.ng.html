@@ -1,0 +1,85 @@
+<div class="update"  >
+     <div class="modal-header">
+            <h2> Update This Link     </h2>
+    </div>
+        <div ng-controller="ModalDetailCtrl">
+            <form  method="post">
+                <div class="modal-body" >
+                    <strong> Link Title</strong><br>
+                    <input type="text" class="inputTitle"  ng-model="link.name" value="{{link.name}}" required/><br>
+
+                    <div id="input3" class="showImg">
+                        <img src="{{link.img}}" id="divPic" class="divImg"  >
+
+                        <div class="title" align="center">{{link.name}}
+                        </div>
+                    </div>
+                    <br>
+                    Link Extra Twitter Bootstarp Class<br>
+                    <div ng-controller="updateHideShow">
+                        <input type="text" class="ImgUrl" ng-model="link.img" value="{{link.img}}" style="display: none" ><br>
+                        <button id="button1" class="btn btn-default" ng-click="toggleCustom()">Link Icons ▼</button>
+                        <br>
+
+                        <div id="Img" class="IMG"  ng-hide="custom">
+
+                            <p>
+                                <img src="images/icons1.png" >
+                                <img src="images/icons2.png" >
+                                <img src="images/icons3.png" >
+                                <img src="images/icons4.png" >
+                                <img src="images/icons5.png" >
+                                <img src="images/icons6.png" >
+                                <img src="images/icons7.png" >
+                                <img src="images/icons8.png" >
+                            </p>
+
+                            <p>
+                                <img src="images/icons9.png" >
+                                <img src="images/icons10.png" >
+                                <img src="images/icons11.png" >
+                                <img src="images/icons12.png" >
+                                <img src="images/icons13.png" >
+                                <img src="images/icons14.png" >
+                                <img src="images/icons15.png" >
+                                <img src="images/icons16.png" >
+                            </p>
+                            <p>
+                                <img src="images/icons19.png" >
+                                <img src="images/icons20.png" >
+                                <img src="images/icons21.png" >
+                                <img src="images/icons22.png" >
+                                <img src="images/icons23.png" >
+                                <img src="images/icons24.png" >
+                                <img src="images/icons25.png" >
+                                <img src="images/icons26.png" >
+                            </p>
+                            <p>
+
+                                <img src="images/icons27.png" >
+                                <img src="images/icons28.png" >
+                                <img src="images/icons29.png" >
+                                <img src="images/icons30.png" >
+                                <img src="images/icons31.png" >
+                                <img src="images/icons32.png" >
+                                <img src="images/icons33.png" >
+                                <img src="images/icons34.png" >
+                            </p>
+
+                        </div>
+                    </div>
+                    For more classes you could use,go <a href="#">here</a><br>
+                    <strong>URL</strong><br>
+                    <input type="url" class="inputUrl" id="input4" ng-model="link.url" value="{{link.url}}" required ><br>
+                    <input type="checkbox"  ng-model="link.public">Public<br>
+                    You can only modify the link you create
+
+                </div>
+            </form>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary" ng-click="update(link)" ><a href="/links">Update</a></button>
+                <button class="btn btn-warning" ng-click="cancel()"><a href="/links">Cancle</a></button>
+            </div>
+        </div>
+
+</div>

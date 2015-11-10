@@ -1,0 +1,7 @@
+
+    <div class="imgList" >
+        <div class="Icon"><span class="icon icon-pencil" id="pencil" style="cursor:pointer;color: red; " ng-click="update(link)"></span>
+            <button class="close" ng-click="remove(link)" title="Delete this link?">&times;</button></div>
+        <a href="{{link.url}}" target="_blank"><img src={{link.img}} class="imglistshow" title="Create by {{link.username}}"></a>
+        <div class="name" title="Create by {{link.username}}" >  <a href="{{link.url}}" target="_blank" >{{link.name}}</a></div>
+    </div>
