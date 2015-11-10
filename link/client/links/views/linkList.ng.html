@@ -1,6 +1,7 @@
 <div class="linkList">
-    <!--用户在输入框中输入的数据名字称作query，会立刻作为列表迭代器其过滤器的输入。
-    当数据模型引起迭代器输入变化的时候，迭代器可以高效得更新DOM将数据模型最新的状态
-    反映出来。-->
+    <!--User input data in the input box name called query,
+    will immediately as a list iterator its input filter.
+   When the data model of the change of the input iterator,
+    the iterator can efficiently update the DOM data model reflected the latest status.-->
     <my-directive ng-repeat="link in links | filter:query|orderBy:order" ng-class="{'checked': task.checked}"></my-directive>
 </div>
