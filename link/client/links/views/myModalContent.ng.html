@@ -7,7 +7,7 @@
             <form  method="post" name="modalDialog" >
                 <div class="modal-body" >
                     <strong> Link Title</strong><br>
-                    <input type="text" class="inputTitle"  placeholder="Input title of the link" required ng-model="link.name" ng-click="remind(link);cancel()"><br>
+                    <input type="text" class="inputTitle"  placeholder="Input title of the link" required ng-model="link.name" ng-disabled="!editable"><br>
 
                     <div id="input3" class="showImg">
                         <img src="{{link.img}}" id="divPic" class="divImg"  >
@@ -16,8 +16,8 @@
                     </div><br>
                     Link Extra Twitter Bootstarp Class<br>
                     <div ng-controller="hideShow">
-                        <input type="text" class="ImgUrl"  value="{{link.img}}" ng-model="link.img" style="display: none" ><br>
-                        <button id="button1" class="btn btn-default" ng-click="toggleCustom()">Link Icons ▼</button><br>
+                        <input type="text" class="ImgUrl"  value="{{link.img}}" ng-model="link.img" style="display: none" ng-disabled="!editable" ><br>
+                        <button id="button1" class="btn btn-default" ng-click="toggleCustom()" ng-disabled="!editable">Link Icons ▼</button><br>
                         <div id="Img" class="IMG"  ng-hide="custom">
 
                             <p>
@@ -66,8 +66,8 @@
                     </div>
                     For more classes you could use,go <a href="#">here</a><br>
                     <strong>URL</strong><br>
-                    <input type="url" class="inputUrl" id="input4" placeholder="http://www.google.com" ng-model="link.url"  required ng-click="remind(link);cancel()" ><br>
-                    <input type="checkbox"  ng-model="link.public" ng-click="remind(link);cancel()">Public<br>
+                    <input type="url" class="inputUrl" id="input4" placeholder="http://www.google.com" ng-model="link.url"  required ng-disabled="!editable" ><br>
+                    <input type="checkbox"  ng-model="link.public" ng-disabled="!editable">Public<br>
                     {{message}}<br>
 
                 </div>
