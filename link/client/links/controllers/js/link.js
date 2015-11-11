@@ -22,6 +22,9 @@ angular.module('myApp')
                 $scope.pageTitle="Create New Link";
                 $scope.button="Create";
                 $scope.message="Want to create private link? You have to login first.";
+                $scope.remind=function(){
+
+                }
                 $scope.submit = function (link) {
                     if(link.name&&link.img&&link.url!=null) {
                         $meteor.call('addLink', link);
@@ -43,8 +46,14 @@ angular.module('myApp')
                 $scope.pageTitle = "Update this Link";
                 $scope.button = "Update";
                 $scope.message = "You can only modify the link you create.";
+                $scope.remind=function(link){
+                   if(Meteor.userId()&&link.owner!=Meteor.userId()){
+                       $window.alert("Sorry,You can't modify other users' link")
+                   }
+                }
                 $scope.submit = function (link) {
                     if(Meteor.userId()&&link.owner!=Meteor.userId()){
+
                         $window.alert("Sorry,You can't modify other users' link")
                     }else{
                     $meteor.call('setChecked', link._id, !link.checked);

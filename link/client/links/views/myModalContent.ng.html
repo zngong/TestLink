@@ -7,7 +7,7 @@
             <form  method="post" name="modalDialog" >
                 <div class="modal-body" >
                     <strong> Link Title</strong><br>
-                    <input type="text" class="inputTitle"  placeholder="Input title of the link" required ng-model="link.name"/><br>
+                    <input type="text" class="inputTitle"  placeholder="Input title of the link" required ng-model="link.name" ng-click="remind(link);cancel()"><br>
 
                     <div id="input3" class="showImg">
                         <img src="{{link.img}}" id="divPic" class="divImg"  >
@@ -66,8 +66,8 @@
                     </div>
                     For more classes you could use,go <a href="#">here</a><br>
                     <strong>URL</strong><br>
-                    <input type="url" class="inputUrl" id="input4" placeholder="http://www.google.com" ng-model="link.url"  required ><br>
-                    <input type="checkbox"  ng-model="link.public">Public<br>
+                    <input type="url" class="inputUrl" id="input4" placeholder="http://www.google.com" ng-model="link.url"  required ng-click="remind(link);cancel()" ><br>
+                    <input type="checkbox"  ng-model="link.public" ng-click="remind(link);cancel()">Public<br>
                     {{message}}<br>
 
                 </div>
