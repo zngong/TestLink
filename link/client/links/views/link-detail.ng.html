@@ -6,7 +6,7 @@
             <form  method="post">
                 <div class="modal-body" >
                     <strong> Link Title</strong><br>
-                    <input type="text" class="inputTitle"  ng-model="link.name" value="{{link.name}}" required/><br>
+                    <input type="text" class="inputTitle"  ng-model="link.name" value="{{link.name}}" required ng-disabled="!editable"/><br>
 
                     <div id="input3" class="showImg">
                         <img src="{{link.img}}" id="divPic" class="divImg"  >
@@ -18,7 +18,7 @@
                     Link Extra Twitter Bootstarp Class<br>
                     <div ng-controller="updateHideShow">
                         <input type="text" class="ImgUrl" ng-model="link.img" value="{{link.img}}" style="display: none" ><br>
-                        <button id="button1" class="btn btn-default" ng-click="toggleCustom()">Link Icons ▼</button>
+                        <button id="button1" class="btn btn-default" ng-click="toggleCustom()" ng-disabled="!editable">Link Icons ▼</button>
                         <br>
 
                         <div id="Img" class="IMG"  ng-hide="custom">
@@ -70,15 +70,15 @@
                     </div>
                     For more classes you could use,go <a href="#">here</a><br>
                     <strong>URL</strong><br>
-                    <input type="url" class="inputUrl" id="input4" ng-model="link.url" value="{{link.url}}" required ><br>
-                    <input type="checkbox"  ng-model="link.public">Public<br>
+                    <input type="url" class="inputUrl" id="input4" ng-model="link.url" value="{{link.url}}" required ng-disabled="!editable" ><br>
+                    <input type="checkbox"  ng-model="link.public" ng-disabled="!editable">Public<br>
                     You can only modify the link you create
 
                 </div>
             </form>
             <div class="modal-footer">
                 <button type="submit" class="btn btn-primary" ng-click="update(link)" ><a href="/links">Update</a></button>
-                <button class="btn btn-warning" ng-click="cancel()"><a href="/links">Cancle</a></button>
+                <button class="btn btn-warning"><a href="/links">Cancel</a></button>
             </div>
         </div>
 

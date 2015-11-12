@@ -2,7 +2,7 @@ Accounts.ui.config({
     passwordSignupFields: "USERNAME_ONLY"
 });
 angular.module('myApp')
-    .controller('ModalDemoCtrl',['$scope','$rootScope','$meteor','$modal','$log','modalService','$window', function ($scope,$rootScope,$meteor,$modal, $log,modalService,$window) {
+    .controller('ModalDemoCtrl',['$scope','$meteor','$modal','$log','modalService','$window', function ($scope,$meteor,$modal, $log,modalService,$window) {
         $scope.links = $meteor.collection(Links).subscribe('links');
         $scope.order="name";
         $scope.remove = function(link){
