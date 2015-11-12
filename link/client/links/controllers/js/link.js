@@ -32,7 +32,7 @@ angular.module('myApp')
                     }
                 };
             }else{
-              $window.alert("Sorry,You don't have a login system, Can't create links");
+              $window.alert("Sorry,You don't have a login system.Can't create link");
             }
 
             };
@@ -52,7 +52,7 @@ angular.module('myApp')
                 $scope.submit = function (link) {
                     if(Meteor.userId()&&link.owner!=Meteor.userId()){
 
-                        $window.alert("Sorry,You can't modify other users' link")
+                        $window.alert("Sorry,You can't modify other user's link")
                     }else{
                     $meteor.call('setChecked', link._id, !link.checked);
                    }

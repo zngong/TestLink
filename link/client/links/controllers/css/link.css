@@ -1,17 +1,18 @@
 .portal-link{
-   margin-top: 20px;
+    margin-top: 20px;
     margin-left: 20px;
 }
 .addLink{
     height: 30px;
     border-radius: 5px;
     margin-right: 15px;
+    margin-top: -10px;
 
 }
 .search{
-    background-image: url("images/search.jpg");
     background-position: right center;
     background-repeat:no-repeat ;
+    background-image: url("images/search.jpg");
     height: 20px;
 }
 .linkList{
@@ -19,11 +20,12 @@
     height: 500px;
     margin-top: 30px;
     margin-left:5px;
-    border: 1px solid #222222;
     overflow-y: auto;
-    background-image: url("images/background.jpg");
+    border-radius: 5px;
+    background-color: rgba(238, 238, 238, 0.31);
     background-repeat: no-repeat;
 }
+
 
 .imgList{
 
@@ -32,9 +34,18 @@
     height: 120px;
     margin-left: 15px;
     margin-top: 15px;
-    border: 1px solid #cc6600;
+    background-color:#eee;
     border-radius: 5px;
-    padding-top: 5px;
+    padding: 5px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+}
+.imgList:hover{
+    border: 1px solid #555;
+    background-color: #ccc;
+}
+.imgList a{
+    color: #222222;
 }
 .name{
     width:100px;
@@ -43,12 +54,8 @@
     text-align: center;
     display: inline;
     color:#0000ff;
-     float:left;
+    float:left;
     cursor:pointer;
-
-
-
-
 }
 .Icon{
     height: 5px;
@@ -60,14 +67,19 @@
 
 }
 .modal-content{
-    margin-left:50px;
+    margin-left:-257px;
     margin-top: 0;
     width:500px;
-
+    left:50%;
+    padding: 0 10px 0 15px;
     border:1px solid #222222;
     z-index: 1;
     position: absolute;
     background-color: #ffffff;
+
+}
+.modal-content  .modal-footer{
+    background-color: #fff;
 }
 .IMG {
     z-index: 940;
@@ -96,8 +108,6 @@
 .modal-body{
     padding-left:10px;
 }
-
-
 .loginBtn{
     margin-top: 10px;
     margin-left: 10px;
@@ -107,11 +117,9 @@
     margin-top: 20px;
 }
 .head{
-    
+
     background-image: url("images/background-logo.jpg");
     background-repeat: no-repeat;
-
-
 }
 .divImg{
     margin-left: 15px;
@@ -129,5 +137,5 @@
     border: 1px solid rgb(0, 0, 0);
 }
 ._img{
-   cursor:hand;
+    cursor:hand;
 }
