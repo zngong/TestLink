@@ -7,7 +7,7 @@
             <form  method="post" name="modalDialog" >
                 <div class="modal-body" >
                     <strong> Link Title</strong><br>
-                    <input type="text" class="inputTitle"  placeholder="Input title of the link" required ng-model="link.name" ng-disabled="!editable"><br>
+                    <input type="text" id="LinkTitle" class="inputTitle"  placeholder="Input title of the link" required ng-model="link.name" ng-disabled="!editable"><br>
 
                     <div id="input3" class="showImg">
                         <img src="{{link.img}}" id="divPic" class="divImg"  >
@@ -15,8 +15,8 @@
                         </div>
                     </div><br>
                     Link Extra Twitter Bootstarp Class<br>
-                    <div ng-controller="hideShow">
-                        <input type="text" class="ImgUrl"  value="{{link.img}}" ng-model="link.img" style="display: none" ng-disabled="!editable" ><br>
+                    <div  ng-controller="hideShow">
+                        <input type="text" id="ImgUrl" value="{{link.img}}" ng-model="link.img"><br>
                         <button id="button1" class="btn btn-default" ng-click="toggleCustom()" ng-disabled="!editable">Link Icons ▼</button><br>
                         <div id="Img" class="IMG"  ng-hide="custom">
 

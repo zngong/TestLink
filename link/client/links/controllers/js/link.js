@@ -24,7 +24,7 @@ angular.module('myApp')
                 $scope.editable=true;
                 $scope.message="Want to create private link? You have to login first.";
                 $scope.submit = function (link) {
-                    if(link.name&&link.img&&link.url!=null) {
+                    if(document.getElementById('LinkTitle').value&&document.getElementById('ImgUrl').value&&document.getElementById('input4').value) {
                         $meteor.call('addLink', link);
                     }else{
                         $window.alert("Please fill out the complete link information");
@@ -73,11 +73,11 @@ angular.module('myApp')
         $scope.toggleCustom=function(){
             $scope.custom=$scope.custom===false? true:false;
         };
-        $("#Img img").click((function () {
+        $("#Img img").click((function (link) {
             $scope.custom=true;
             $("#input3 img").attr('src', $(this).attr("src"));
+            $("#ImgUrl").attr('value', $(this).attr("src"));
             $scope.link.img=$(this).attr("src");
-
 
       }));
 
