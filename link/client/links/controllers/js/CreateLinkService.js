@@ -11,12 +11,12 @@ angular.module("myApp")
             })
         };
         myModalService.myUpdate=function(scope){
-            var modalInstance = $modal.open({
-                windowClass: 'modal discontinue-modal',
-                templateUrl: 'myModalContent.ng.html',
-                controller: 'ModalInstanceCtrl',
-                scope: scope
-            })
+                var modalInstance = $modal.open({
+                    windowClass: 'modal discontinue-modal',
+                    templateUrl: 'myModalContent.ng.html',
+                    controller: 'ModalInstanceCtrl',
+                    scope: scope
+                })
         };
 
         return myModalService;

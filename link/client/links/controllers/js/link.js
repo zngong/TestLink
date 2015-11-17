@@ -16,7 +16,7 @@ angular.module('myApp')
             }
 
         };
-        $scope.open = function () {
+        $scope.create= function () {
             if(Meteor.userId()){
                 modalService.myCreate($scope);
                 $scope.pageTitle="Create New Link";
@@ -38,7 +38,7 @@ angular.module('myApp')
             };
         $scope.update=function(link) {
             if(!Meteor.userId()){
-                $window.alert("Sorry,You don't have a login system, Can't modify any link")
+                $window.alert("Sorry,You don't have a login system,You can't modify any link");
             }else{
                 modalService.myUpdate($scope);
                 $scope.pageTitle = "Update this Link";
