@@ -20,6 +20,7 @@
     height: 500px;
     margin-top: 30px;
     margin-left:5px;
+    margin-right: 5px;
     overflow-y: auto;
     border-radius: 5px;
     background-color: rgba(238, 238, 238, 0.31);
