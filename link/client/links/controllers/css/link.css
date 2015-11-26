@@ -16,12 +16,13 @@
     height: 20px;
 }
 .linkList{
-    width: 97%;
+    width: 95%;
     height: 500px;
     margin-top: 30px;
-    margin-left:5px;
-    margin-right: 5px;
+    margin-left:15px;
+    margin-right: 10px;
     overflow-y: auto;
+    overflow-x: auto;
     border-radius: 5px;
     background-color: rgba(238, 238, 238, 0.31);
     background-repeat: no-repeat;
@@ -45,8 +46,20 @@
     border: 1px solid #555;
     background-color: #ccc;
 }
+.imgList:hover span{
+    opacity: 1;
+}
+.imgList:hover button{
+    opacity: 1;
+}
 .imgList a{
     color: #222222;
+}
+.imgList span{
+    opacity: 0.005;
+}
+.imgList button{
+    opacity: 0.005;
 }
 .name{
     width:100px;
@@ -121,6 +134,8 @@
 
     background-image: url("images/background-logo.jpg");
     background-repeat: no-repeat;
+    width: 95%;
+
 }
 .divImg{
     margin-left: 15px;
@@ -133,8 +148,9 @@
 }
 .update{
     width: 500px;
-    margin-left: 380px;
-    margin-top: 20px;
+    margin-left: 30%;
+    margin-top: 5%;
+    left:50%;
     border: 1px solid rgb(0, 0, 0);
 }
 ._img{

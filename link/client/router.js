@@ -13,7 +13,7 @@ angular.module("myApp").config(['$urlRouterProvider', '$stateProvider', '$locati
         $stateProvider
             .state('links',//this is first parameter,the "links" is state's name,It can be arbitrary.
                 {
-                    url: '/links',//the url is state,
+                    url: '/links',//the url is page state,
                     //When the state is "/links", the template will be inserted into the "ui-view" element.
                     templateUrl: 'client/links/views/link.ng.html',
                     controller: 'ModalDemoCtrl'
