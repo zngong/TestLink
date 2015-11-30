@@ -41,6 +41,8 @@
     padding: 5px;
     border: 1px solid #bbb;
     cursor: pointer;
+    border-style:groove;
+
 }
 .imgList:hover{
     border: 1px solid #555;
