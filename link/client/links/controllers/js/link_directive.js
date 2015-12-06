@@ -15,7 +15,6 @@ angular.module("myApp")
             controller:'ModalDemoCtrl',
             templateUrl:'client/links/views/linkHead.ng.html'
         }
-
     })
     .directive('linkList', function(){
         return{

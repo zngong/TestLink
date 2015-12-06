@@ -1,12 +1,26 @@
 .portal-link{
-    margin-top: 20px;
-    margin-left: 20px;
+
+    /*margin-left: 20px;*/
 }
 .addLink{
     height: 30px;
     border-radius: 5px;
-    margin-right: 15px;
-    margin-top: -10px;
+    margin-top: -7px;
+    margin-right: 20px;
+    background-color: #ffffff;
+
+}
+.addLink:hover{
+    background-color: #dddddd;
+}
+.span{
+    font-family:"STCaiyun";
+    font-size: 80px;
+    float : left;
+    margin-left: 20px;
+    color: #ffffff;
+    margin-top: 50px;
+
 
 }
 .search{
@@ -14,17 +28,16 @@
     background-repeat:no-repeat ;
     background-image: url("images/search.jpg");
     height: 20px;
+
 }
 .linkList{
-    width: 95%;
-    height: 500px;
-    margin-top: 30px;
-    margin-left:15px;
+    width: 100%;
+    height: 580px;
     margin-right: 10px;
     overflow-y: auto;
     overflow-x: auto;
     border-radius: 5px;
-    background-color: rgba(238, 238, 238, 0.31);
+    background-color: #e5f0f6;
     background-repeat: no-repeat;
 }
 
@@ -42,11 +55,12 @@
     border: 1px solid #bbb;
     cursor: pointer;
     border-style:groove;
+    background-color: #e3d6d9;
 
 }
 .imgList:hover{
     border: 1px solid #555;
-    background-color: #ccc;
+    background-color: #489FCA;
 }
 .imgList:hover span{
     opacity: 1;
@@ -76,6 +90,9 @@
 .Icon{
     height: 5px;
 }
+#delete{
+    float: right;
+}
 .deleteBtn{
     margin-top: 0;
     margin-left: 65px;
@@ -87,15 +104,12 @@
     margin-top: 0;
     width:500px;
     left:50%;
-    padding: 0 10px 0 15px;
+    /*padding: 0 2px 0 15px;*/
     border:1px solid #222222;
     z-index: 1;
     position: absolute;
     background-color: #ffffff;
 
-}
-.modal-content  .modal-footer{
-    background-color: #fff;
 }
 .IMG {
     z-index: 940;
@@ -124,19 +138,39 @@
 .modal-body{
     padding-left:10px;
 }
+.login-link-text{
+    color: #ffffff;
+    /*margin-bottom: 100px;*/
+
+}
 .loginBtn{
-    margin-top: 10px;
-    margin-left: 10px;
+  float:right;
+  margin-right: 15px;
+}
+.addSearch{
+  margin-right: 15px;
+    margin-left: 150px;
+    margin-top: 45px;
+    float: right;
+}
+.login-link-text:hover{
+    color: #deb887;
+}
+.login-close-text{
+    float: right;
+}
+.accounts-dialog{
+    margin: 5px -12px 0 -220px;
 }
 .imglistshow{
     margin-left: 25px;
     margin-top: 20px;
 }
 .head{
-
-    background-image: url("images/background-logo.jpg");
     background-repeat: no-repeat;
-    width: 95%;
+    width: 100%;
+    background-color: #0D6A98;
+    height: 110px;
 
 }
 .divImg{
@@ -157,4 +191,7 @@
 }
 ._img{
     cursor:hand;
+}
+.modal-header{
+    background-color: #f8f8f8;
 }

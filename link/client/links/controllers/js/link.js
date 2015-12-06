@@ -7,7 +7,16 @@ angular.module('myApp')
         $scope.order="name";
         $scope.remove = function(link){
             if(Meteor.userId()&&link.owner===Meteor.userId()){
-                $scope.links.remove(link);
+                var r=confirm("Do you want to delete this link?");
+                if (r==true)
+                {
+                    $scope.links.remove(link);
+                }
+                else
+                {
+                    return false;
+                };
+
             }else if(!Meteor.userId()){
                 $window.alert("Sorry, You don't have a login, Can't delete any links");
             }else{

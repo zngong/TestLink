@@ -7,7 +7,7 @@
             <form  method="post" name="modalDialog" >
                 <div class="modal-body" >
                     <strong> Link Title</strong><br>
-                    <input type="text" id="LinkTitle" class="inputTitle"  placeholder="Input title of the link" required ng-model="link.name" ng-disabled="!editable"><br>
+                    <input type="text" id="LinkTitle" class="inputTitle"  placeholder="Input title of the link" required ng-model="link.name" ng-readonly="!editable"><br>
 
                     <div id="input3" class="showImg">
                         <img src="{{link.img}}" id="divPic" class="divImg"  >
@@ -17,7 +17,7 @@
                     Link Extra Twitter Bootstarp Class<br>
                     <div  ng-controller="hideShow">
                         <input type="text" id="ImgUrl" value="{{link.img}}" ng-model="link.img" style="display: none"><br>
-                        <button id="button1" class="btn btn-default" ng-click="toggleCustom()" ng-disabled="!editable">Link Icons ▼</button><br>
+                        <button id="button1" class="btn btn-default" ng-click="toggleCustom()" ng-readonly="!editable">Link Icons ▼</button><br>
                         <div id="Img" class="IMG"  ng-hide="custom">
 
                             <p>
@@ -40,8 +40,8 @@
                     </div>
                     For more classes you could use,go <a href="#">here</a><br>
                     <strong>URL</strong><br>
-                    <input type="url" class="inputUrl" id="input4" placeholder="http://www.google.com" ng-model="link.url"  required ng-disabled="!editable" ><br>
-                    <input type="checkbox"  ng-model="link.public" ng-disabled="!editable">Public<br>
+                    <input type="url" class="inputUrl" id="input4" placeholder="http://www.google.com" ng-model="link.url"  required ng-readonly="!editable" ><br>
+                    <input type="checkbox"  ng-model="link.public" ng-readonly="!editable">Public<br>
                     {{message}}<br>
 
                 </div>

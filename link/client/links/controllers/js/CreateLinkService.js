@@ -18,7 +18,6 @@ angular.module("myApp")
                     scope: scope
                 })
         };
-
         return myModalService;
         }
     ])

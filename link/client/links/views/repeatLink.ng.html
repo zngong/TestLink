@@ -1,7 +1,8 @@
-
-    <div class="imgList" title="Create by {{link.username}}" >
-        <div class="Icon"><a href="links/{{link._id}}"><span class="icon icon-pencil" id="pencil" title="modify this link"></span></a>
-            <button class="close" ng-click="remove(link)" title="Delete this link?">&times;</button></div>
-        <a href="{{link.url}}" target="_blank"><img src={{link.img}} class="imglistshow" ></a>
-        <div class="name" >  <a href="{{link.url}}" target="_blank" >{{link.name}}</a></div>
+<div class="imgList" title="Create by {{link.username}}">
+    <div class="Icon" >
+        <span class="icon icon-pencil" id="pencil" title="modify this link" ng-click="update(link)" ></span>
+        <span class="icon icon-trash" id="delete" title="Delete this link?" ng-click="remove(link)" ></span>
     </div>
+    <a href="{{link.url}}" target="_blank"><img src={{link.img}} class="imglistshow"></a>
+    <div class="name"><a href="{{link.url}}" target="_blank">{{link.name}}</a></div>
+</div>
