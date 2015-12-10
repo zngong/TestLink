@@ -1,13 +1,11 @@
-.portal-link{
 
-    /*margin-left: 20px;*/
-}
 .addLink{
-    height: 30px;
+    height: 31px;
     border-radius: 5px;
-    margin-top: -7px;
-    margin-right: 20px;
-    background-color: #ffffff;
+    margin-top: -10px;
+    margin-right: 13px;
+    background-color: #eeeeee;
+    position: relative;
 
 }
 .addLink:hover{
@@ -20,25 +18,16 @@
     margin-left: 20px;
     color: #ffffff;
     margin-top: 50px;
+    position: relative;
 
-
-}
-.search{
-    background-position: right center;
-    background-repeat:no-repeat ;
-    background-image: url("images/search.jpg");
-    height: 20px;
 
 }
 .linkList{
     width: 100%;
-    height: 580px;
-    margin-right: 10px;
+    height: 585px;
     overflow-y: auto;
-    overflow-x: auto;
-    border-radius: 5px;
-    background-color: #e5f0f6;
-    background-repeat: no-repeat;
+    position: relative;
+
 }
 
 
@@ -52,15 +41,15 @@
     background-color:#eee;
     border-radius: 5px;
     padding: 5px;
-    border: 1px solid #bbb;
+    border: 2px solid #bbb;
     cursor: pointer;
-    border-style:groove;
-    background-color: #e3d6d9;
+    /*border-style:groove;*/
+    background-color: #e5f0f6;
 
 }
 .imgList:hover{
-    border: 1px solid #555;
-    background-color: #489FCA;
+    border: 2px solid #07518E;
+    background-color: #B8E2F6;
 }
 .imgList:hover span{
     opacity: 1;
@@ -69,7 +58,10 @@
     opacity: 1;
 }
 .imgList a{
-    color: #222222;
+    color: #3A27C3;
+    font-size: 14px;
+    font-weight: 500;
+
 }
 .imgList span{
     opacity: 0.005;
@@ -83,7 +75,6 @@
     margin-top:7px;
     text-align: center;
     display: inline;
-    color:#0000ff;
     float:left;
     cursor:pointer;
 }
@@ -100,9 +91,9 @@
 
 }
 .modal-content{
-    margin-left:-257px;
+    margin-left:-240px;
     margin-top: 0;
-    width:500px;
+    width:100%;
     left:50%;
     /*padding: 0 2px 0 15px;*/
     border:1px solid #222222;
@@ -136,22 +127,29 @@
 
 }
 .modal-body{
-    padding-left:10px;
+    padding-left:20px;
+    padding-right: 20px;
 }
 .login-link-text{
     color: #ffffff;
-    /*margin-bottom: 100px;*/
+    font-size: 12px;
 
 }
 .loginBtn{
   float:right;
   margin-right: 15px;
+  margin-top: 10px;
 }
 .addSearch{
   margin-right: 15px;
     margin-left: 150px;
-    margin-top: 45px;
-    float: right;
+    margin-top: 39px;
+    position: absolute;
+    right: 0;
+}
+.addSearch .search{
+    /*border-radius: 0;*/
+    background-color: #ffffff;
 }
 .login-link-text:hover{
     color: #deb887;
@@ -171,7 +169,13 @@
     width: 100%;
     background-color: #0D6A98;
     height: 110px;
+    position: relative;
 
+}
+.icon-position{
+    position: absolute;
+    right: 7px;
+    bottom: 18px;
 }
 .divImg{
     margin-left: 15px;
@@ -193,5 +197,19 @@
     cursor:hand;
 }
 .modal-header{
-    background-color: #f8f8f8;
+    background-color: #f5f5f5;
+    height: 50px;
+}
+.modal-backdrop, .modal-backdrop.fade.in{
+    opacity: 0.5;
+}
+.dialog-text{
+    font-size: 26px;
+    color: #4d4d4d;
+    display: inline-block;
+    margin: 15px 0 0 5px;
+}
+.close{
+    font-size: 25px;
+    line-height: 40px;
 }

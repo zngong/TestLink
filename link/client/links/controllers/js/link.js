@@ -5,6 +5,11 @@ angular.module('myApp')
     .controller('ModalDemoCtrl',['$scope','$meteor','$modal','$log','modalService','$window', function ($scope,$meteor,$modal, $log,modalService,$window) {
         $scope.links = $meteor.collection(Links).subscribe('links');
         $scope.order="name";
+          //if(Meteor.userId()){
+          //    $scope.hide=false;
+          //   }else{
+          //      $scope.hide=true;
+          //    }
         $scope.remove = function(link){
             if(Meteor.userId()&&link.owner===Meteor.userId()){
                 var r=confirm("Do you want to delete this link?");

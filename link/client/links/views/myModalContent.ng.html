@@ -1,7 +1,7 @@
 <div class="modalDialog" >
     <script type="text/ng-template" id="myModalContent.ng.html">
         <div class="modal-header">
-            <h2> {{pageTitle}}    <button type="button" class="close" ng-click="cancel()"> &times;</button>      </h2>
+            <span class="dialog-text">{{pageTitle}}</span> <button type="button" class="close" ng-click="cancel()"> &times;</button>
         </div>
         <div ng-controller="ModalDemoCtrl">
             <form  method="post" name="modalDialog" >
@@ -48,8 +48,8 @@
             </form>
             <div class="modal-footer">
                 <button id="sub" class="btn btn-primary" ng-click="submit(link);cancel()"  >{{button}}</button>
-        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
-        </div>
+                <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+            </div>
         </div>
     </script>
 
